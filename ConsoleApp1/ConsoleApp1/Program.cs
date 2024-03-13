@@ -1,16 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-
-double average(double[] arr)
+﻿static int feature_max(int[] arr)
 {
-    double sum = 0;
-    for (int i = 0; i < arr.Length; i++)
-    {
-        sum += arr[i];
-    }
-
-    return sum / arr.Length;
+    int max_val = arr.Max();
+    return max_val;
 }
 
-Console.WriteLine(average([1,2,3,4,5]));
+Console.WriteLine(feature_max([1,3,4,20]));
